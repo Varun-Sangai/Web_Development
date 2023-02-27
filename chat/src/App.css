@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.bo{
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.bott{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: darkgray;
+  position: fixed;
+  bottom: 0px;
+  left: 10%;
+}
+.heading {
+  font-family: Poppins;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.grid-child {
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.grid-child:hover {
+  background-color: whitesmoke;
+  box-shadow: 11px 11px 11px black; 
+  color: #212121;
+}
+
+.grid-child h3 {
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.grid-child p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.text-area {
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: black;
+  overflow: auto;
+  margin-bottom:0;
+  font-family: Poppins;
+}
+
+.act{
+  
+}
+.yc
+{
+  background-color: rgb(54, 53, 53);
+  line-height: 2.5rem;
+  padding-left: 10px;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-family: Poppins;
+  margin-left: 8%;
+  margin-right: 5%;
+  text-align: left;
+}
+.result-text{
+  font-family: Poppins;
+  font-size: 25px;
+  line-height: 2.5rem;
+  margin-bottom: 100px;
+  text-align: left;
+  margin-left: 8%;
+  margin-right: 5%;
+  background-color:black;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+}
+
+.joined .cube-face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.6s;
+}
+
+.split .cube-face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.6s;
+  transform: rotateY(45deg) translateZ(100px);
+}
+
+.cube.joined .top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube.joined .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube.joined .front {
+  transform: translateZ(100px);
+}
+
+.cube.joined .back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube.joined .left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube.joined .right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube.split .top {
+  transform: rotateX(135deg) translateZ(142.42px);
+}
+
+.cube.split .bottom {
+  transform: rotateX(-135deg) translateZ(142.42px);
+}
+
+.cube.split .front {
+  transform: rotateY(-45deg) translateZ(142.42px);
+}
+.cube-face {
+  background-color: #3F51B5;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
